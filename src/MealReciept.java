@@ -34,9 +34,31 @@ public class MealReciept
 		double entreePrice=Double.parseDouble(entreePriceStr);
 		double dessertPrice=Double.parseDouble(dessertPriceStr);
 		double tip=Double.parseDouble(tipStr);
+		double subtotal= appetizerPrice+entreePrice+dessertPrice;
+		double tax= subtotal*0.06;
+		double tipthing= tip*10;
+		double tiptotal= tip*subtotal;
+		double total=tip+subtotal+tax;
+		int placeholder=2;
+		
+		Math.round( total,placeholder);
+		
+		
+		
+		
+		
 		
 		System.out.println("Item                              Price");
-		System.out.println(appetizerStr       +       appetizerPrice);
+		System.out.println(appetizerStr       +   "$"+appetizerPrice);
+		System.out.println(entreeStr +             "$"+  entreePrice);
+		System.out.println(dessertStr +             "$"+dessertPrice);
+		System.out.println("Subtotal"        +          "$"+subtotal);
+		System.out.println("Tax" +                           "$"+tax);
+		System.out.println("Tip @ "+tipthing     +      "$"+tiptotal);
+		System.out.println("Total" +                       "$"+total);
+		
+		
+		
 		
 		
 		
