@@ -36,7 +36,11 @@ public class MealReciept
 		double tip=Double.parseDouble(tipStr);
 		
 		System.out.println("Item                              Price");
-		System.out.println(appetizerStr;
+		System.out.println(appetizerStr       +       appetizerPrice);
+		
+		
+		
+		
 		
 		
 		
