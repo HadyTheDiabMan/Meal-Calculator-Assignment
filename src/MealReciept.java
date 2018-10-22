@@ -41,7 +41,14 @@ public class MealReciept
 		double total=tip+subtotal+tax;
 		int placeholder=2;
 		
-		Math.round( total,placeholder);
+		
+		
+		
+		double roundedtax= Math.round(tax*100.0)/100.0;
+		double roundedtiptotal=Math.round(tiptotal*100.0)/100.0;
+		double roundedtotal=Math.round(total*100.0)/100.0;
+		double roundedtipthing=Math.round(tipthing*100.0)/100.0;
+		
 		
 		
 		
@@ -49,13 +56,13 @@ public class MealReciept
 		
 		
 		System.out.println("Item                              Price");
-		System.out.println(appetizerStr       +   "$"+appetizerPrice);
-		System.out.println(entreeStr +             "$"+  entreePrice);
-		System.out.println(dessertStr +             "$"+dessertPrice);
-		System.out.println("Subtotal"        +          "$"+subtotal);
-		System.out.println("Tax" +                           "$"+tax);
-		System.out.println("Tip @ "+tipthing     +      "$"+tiptotal);
-		System.out.println("Total" +                       "$"+total);
+		System.out.println(appetizerStr+"                    $"+appetizerPrice);
+		System.out.println(entreeStr +"                    $"+  entreePrice);
+		System.out.println(dessertStr +"                   $"+dessertPrice);
+		System.out.println("Subtotal"+"                      $"+subtotal);
+		System.out.println("Tax" +"                           $"+roundedtax);
+		System.out.println("Tip @ "+roundedtipthing+"          $"+roundedtiptotal);
+		System.out.println("Total" +"                          $"+roundedtotal);
 		
 		
 		
