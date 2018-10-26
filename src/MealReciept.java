@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @author Hady Diab (hdiab22) (HadyTheDiabMan)
+ * @author Hady Diab , Meal Reciept
  *
  */
 public class MealReciept 
@@ -23,7 +23,7 @@ public class MealReciept
 		String entreeStr=calculator.nextLine();
 		System.out.println("Please enter the price of your entrée: ");
 		String entreePriceStr=calculator.nextLine();
-		System.out.println("Please enter the name oof your dessert: ");
+		System.out.println("Please enter the name of your dessert: ");
 		String dessertStr=calculator.nextLine();
 		System.out.println("Please enter the price of your dessert: ");
 		String dessertPriceStr=calculator.nextLine();
@@ -48,6 +48,8 @@ public class MealReciept
 		double roundedtiptotal=Math.round(tiptotal*100.0)/100.0;
 		double roundedtotal=Math.round(total*100.0)/100.0;
 		double roundedtipthing=Math.round(tipthing*100.0)/100.0;
+		double roundedsubtotal=Math.round(subtotal*100.0)/100.0;
+		
 		
 		
 		
@@ -59,7 +61,7 @@ public class MealReciept
 		System.out.println(appetizerStr+"                    $"+appetizerPrice);
 		System.out.println(entreeStr +"                    $"+  entreePrice);
 		System.out.println(dessertStr +"                   $"+dessertPrice);
-		System.out.println("Subtotal"+"                      $"+subtotal);
+		System.out.println("Subtotal"+"                      $"+roundedsubtotal);
 		System.out.println("Tax" +"                           $"+roundedtax);
 		System.out.println("Tip @ "+roundedtipthing+"          $"+roundedtiptotal);
 		System.out.println("Total" +"                          $"+roundedtotal);
